@@ -1,0 +1,185 @@
+:root{
+    --bg-color: white;
+    --bg-secondary: rgb(202, 202, 202);
+    --btn-color: blue;
+    --btn-color-hover: rgb(60, 3, 114);
+}
+
+html {
+    background-color: var(--bg-color);
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+    margin: 1vw;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* z-index: 9999; */
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: var(--bg-secondary);
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    gap: 2vw;
+    padding: 0;
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: var(--btn-color);
+}
+
+#top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#about, #portfolio  {
+    display: flex;
+    margin-top: 3vw;
+    margin-left: 6vw;
+    margin-right: 6vw;
+    text-align: center;
+}
+#academic div{
+    margin-top: 3vw;
+    margin-left: 6vw;
+    margin-right: 6vw;
+    text-align: center;
+}
+#contact{
+    margin-top: 3vw;
+    margin-left: 6vw;
+    margin-right: 6vw;
+    text-align: center;
+}
+
+.presentation{
+    display: grid;
+    font-size: 2vw;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.presentation > img {
+    justify-content: center;
+    width: 300px;
+    height: 280px;
+}
+
+.pres-text{
+    grid-column: 1 / 4;
+    margin-left: 10px;
+    text-align: center;
+    font-size: 1.75rem;
+}
+
+.btnStart{
+    grid-column: 2;
+    text-align: center;
+    color: var(--btn-color);
+    font-size: 1.5rem;
+}
+.btnStart:hover{
+    color: var(--btn-color-hover);
+}
+
+.project-item{
+    background-color: var(--bg-secondary);
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.projects-container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3vw;
+}
+
+.btn-project{
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: .85rem;
+}
+
+.btn-project:hover{
+    background-color: blue;
+    color: white;
+}
+
+.mern{
+    text-align: center;
+    font-size: 6vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 3vw;
+}
+
+.java{
+    text-align: center;
+    font-size: 6vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 3vw;
+
+}
+
+.others{
+    text-align: center;
+    font-size: 6vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 3vw;
+}
+
+.icon-name{
+    font-size: 1rem;
+}
+
+.icons-contact{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style-type: none;
+    font-size: 5rem;
+    margin-block-start: 0;
+}
+
+.footer{
+    text-align: center;
+    font-size: .75rem;
+}
+
+@media screen and (max-width: 767px){
+    .icons-contact{
+        display: flex;
+        flex-direction: column;
+        margin-top: auto;
+
+    }
+
+}
